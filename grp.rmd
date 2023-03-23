@@ -1,0 +1,21 @@
+```{r library}
+library(tidyverse)
+```
+
+```{r}
+raw = read_csv("/Users/tonygong/Documents/GNNs_codes/dailyCo2/dailyCo2Updated/dataset/grp_2019_2022.csv") # nolint: line_length_linter.
+```
+
+```{r}
+rownames(raw) <- raw$region
+data = raw
+```
+
+```{r}
+data_22 = data$'2022'
+```
+
+```{r}
+matrix(data_22, nrow = length(my_list[[1]]), byrow = TRUE)
+
+```
